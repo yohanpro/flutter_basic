@@ -8,11 +8,16 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange,
       appBar: AppBar(
-        title: Text('Home'),
+        title: Text('This is my Home!'),
       ),
-      body: Center(
-        child: Text('Hello World'),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset('asset/img/logo.png'),
+          CircularProgressIndicator(color: Colors.white)
+        ],
       ),
     );
   }
